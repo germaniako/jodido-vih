@@ -35,3 +35,5 @@ Credits:
 		jQuery (jquery.com)
 		Misc. Sass functions (@HugoGiraudel)
 		Skel (skel.io)
+
+Thanks
