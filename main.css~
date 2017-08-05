@@ -1,5 +1,6 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
 
 /*
 	Story by HTML5 UP
@@ -14,9 +15,21 @@
 		padding: 0;
 		border: 0;
 		font-size: 100%;
-		font: verdana;
+		font: inherit;
 		vertical-align: baseline;
 	}
+	
+.capitalLetter
+{
+   float:left;
+   color:black;
+   background:white;
+   font-size:80px;
+   line-height:75px;
+   padding: 2px;
+   font-family:roboto;
+   margin-right: 5px;
+}
 
 	article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
 		display: block;
@@ -47,6 +60,7 @@
 	body {
 		-webkit-text-size-adjust: none;
 	}
+
 
 /* Box Model */
 
@@ -1681,7 +1695,7 @@
 	}
 
 	body, input, select, textarea {
-		font-family: "Source Sans Pro", Helvetica, sans-serif;
+		font-family: 'Roboto', Helvetica, sans-serif;
 		font-size: 1rem;
 		font-weight: 300;
 		line-height: 1.65;
@@ -1700,9 +1714,9 @@
 		}
 
 	strong, b {
-		font-weight: 400;
-	}
-
+		font-weight: 500;
+	}	
+	
 	em, i {
 		font-style: italic;
 	}
@@ -1716,7 +1730,8 @@
 		}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 300;
+		font-family: 'Montserrat', sans-serif;		
+		font-weight: 800;
 		line-height: 1.375;
 		letter-spacing: -0.05em;
 		margin: 0 0 1rem 0;
@@ -1765,10 +1780,20 @@
 	}
 
 	blockquote {
-		border-left: solid 4px;
+		font-family: "Montserrat";
+		font-weight: 100;
 		font-style: italic;
-		margin: 0 0 2rem 0;
 		padding: 0.5rem 0 0.5rem 2rem;
+		background: #cd0000;
+    	color: #fff;
+    	width: 30%;
+    	padding: 15px;
+    	font-size: 1.1em;
+    	float: left;
+    	margin: 7px 24px 7px 0;
+    	border-left: 15px solid #ccc;
+
+
 	}
 
 	code {
@@ -1848,7 +1873,7 @@
 	}
 
 		a:hover {
-			color: #E64848;
+			color: #cd0000;
 		}
 
 	strong, b {
@@ -1876,7 +1901,7 @@
 
 	.box {
 		border-radius: 4px;
-		border: solid 1px;
+		border: solid 4px;
 		margin-bottom: 2rem;
 		padding: 1.5rem;
 	}
@@ -1959,6 +1984,16 @@
 			line-height: 3.325em;
 			border-radius: 3.325em;
 			padding: 0 2em;
+			background: #000;
+			
+		}
+
+			input[type="submit"].small:hover,
+			input[type="reset"].small:hover,
+			input[type="button"].small:hover,
+			button.small:hover,
+			.button.:hover {
+				background-color: #cd0000;
 		}
 
 		input[type="submit"].big,
@@ -2012,8 +2047,8 @@
 		input[type="button"]:hover,
 		button:hover,
 		.button:hover {
-			box-shadow: inset 0 0 0 1px #E64848;
-			color: #E64848 !important;
+			box-shadow: inset 0 0 0 1px #cd0000;
+			color: #cd0000 !important;
 		}
 
 		input[type="submit"]:active,
@@ -2022,8 +2057,8 @@
 		button:active,
 		.button:active {
 			background-color: rgba(230, 72, 72, 0.2);
-			box-shadow: inset 0 0 0 1px #E64848;
-			color: #E64848 !important;
+			box-shadow: inset 0 0 0 1px #cd0000;
+			color: #cd0000 !important;
 		}
 
 		input[type="submit"].special,
@@ -2031,7 +2066,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #000000;
+			background-color: #cd0000;
 			box-shadow: none;
 			color: #ffffff !important;
 		}
@@ -2041,7 +2076,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #E64848;
+				background-color: #000;
 			}
 
 			input[type="submit"].special:active,
@@ -2334,8 +2369,8 @@
 		input[type="url"]:focus,
 		select:focus,
 		textarea:focus {
-			border-color: #E64848;
-			box-shadow: 0 0 0 1px #E64848;
+			border-color: #cd0000;
+			box-shadow: 0 0 0 1px #cd0000;
 		}
 
 	.select-wrapper:before {
@@ -2361,8 +2396,8 @@
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #E64848;
-		box-shadow: 0 0 0 1px #E64848;
+		border-color: #cd0000;
+		box-shadow: 0 0 0 1px #cd0000;
 	}
 
 	::-webkit-input-placeholder {
@@ -2436,14 +2471,14 @@
 	}
 
 	a.icon.style2:hover:before {
-		box-shadow: inset 0 0 0 1px #E64848;
-		color: #E64848;
+		box-shadow: inset 0 0 0 1px #cd0000;
+		color: #cd0000;
 	}
 
 	a.icon.style2:active:before {
-		background-color: rgba(71, 211, 229, 0.1);
-		box-shadow: inset 0 0 0 1px #E64848;
-		color: #E64848;
+		background-color: rgba(230, 72, 72, 0.1);
+		box-shadow: inset 0 0 0 1px #cd0000;
+		color: #cd0000;
 	}
 
 /* Image */
@@ -2473,6 +2508,7 @@
 			float: left;
 			margin: 0 1.5rem 1rem 0;
 			top: 0.25rem;
+			
 		}
 
 		.image.right {
@@ -2662,7 +2698,7 @@
 
 		dl dt {
 			display: block;
-			font-weight: 400;
+			font-weight: 300;
 			margin: 0 0 1rem 0;
 		}
 
@@ -2753,7 +2789,7 @@
 
 		table th {
 			font-size: 0.9rem;
-			font-weight: 400;
+			font-weight: 300;
 			padding: 0 0.75rem 0.75rem 0.75rem;
 			text-align: left;
 		}
@@ -4724,6 +4760,7 @@
 			.spotlight.style1 .content {
 				padding: 4rem 4rem 2rem 4rem ;
 			}
+			
 
 		}
 
@@ -6182,7 +6219,7 @@
 		}
 
 			.gallery.style1 a:hover {
-				color: #E64848;
+				color: #cd0000;
 			}
 
 		.gallery.style1 strong, .gallery.style1 b {
@@ -6221,8 +6258,8 @@
 			.gallery.style1 input[type="button"]:hover,
 			.gallery.style1 button:hover,
 			.gallery.style1 .button:hover {
-				box-shadow: inset 0 0 0 1px #E64848;
-				color: #E64848 !important;
+				box-shadow: inset 0 0 0 1px #cd0000;
+				color: #cd0000 !important;
 			}
 
 			.gallery.style1 input[type="submit"]:active,
@@ -6230,9 +6267,9 @@
 			.gallery.style1 input[type="button"]:active,
 			.gallery.style1 button:active,
 			.gallery.style1 .button:active {
-				background-color: rgba(71, 211, 229, 0.2);
-				box-shadow: inset 0 0 0 1px #E64848;
-				color: #E64848 !important;
+				background-color: rgba(230, 72, 72, 0.2);
+				box-shadow: inset 0 0 0 1px #cd0000;
+				color: #cd0000 !important;
 			}
 
 			.gallery.style1 input[type="submit"].special,
@@ -6250,7 +6287,7 @@
 				.gallery.style1 input[type="button"].special:hover,
 				.gallery.style1 button.special:hover,
 				.gallery.style1 .button.special:hover {
-					background-color: #E64848;
+					background-color: #cd0000;
 				}
 
 				.gallery.style1 input[type="submit"].special:active,
@@ -6333,7 +6370,7 @@
 				left: 0;
 				width: 100%;
 				height: 100%;
-				background-color: rgba(0, 0, 0, 0.5);
+				background-color: rgba(0, 0, 0, 0.8);
 				opacity: 0;
 				padding: 2rem;
 				z-index: 1;
@@ -6512,7 +6549,7 @@
 		}
 
 			.gallery.style2 a:hover {
-				color: #E64848;
+				color: #cd0000;
 			}
 
 		.gallery.style2 strong, .gallery.style2 b {
@@ -6551,8 +6588,8 @@
 			.gallery.style2 input[type="button"]:hover,
 			.gallery.style2 button:hover,
 			.gallery.style2 .button:hover {
-				box-shadow: inset 0 0 0 1px #E64848;
-				color: #E64848 !important;
+				box-shadow: inset 0 0 0 1px #cd0000;
+				color: #cd0000 !important;
 			}
 
 			.gallery.style2 input[type="submit"]:active,
@@ -6560,9 +6597,9 @@
 			.gallery.style2 input[type="button"]:active,
 			.gallery.style2 button:active,
 			.gallery.style2 .button:active {
-				background-color: rgba(71, 211, 229, 0.2);
-				box-shadow: inset 0 0 0 1px #E64848;
-				color: #E64848 !important;
+				background-color: rgba(230, 72, 72, 0.2);
+				box-shadow: inset 0 0 0 1px #cd0000;
+				color: #cd0000 !important;
 			}
 
 			.gallery.style2 input[type="submit"].special,
@@ -6580,7 +6617,7 @@
 				.gallery.style2 input[type="button"].special:hover,
 				.gallery.style2 button.special:hover,
 				.gallery.style2 .button.special:hover {
-					background-color: #E64848;
+					background-color: #cd0000;
 				}
 
 				.gallery.style2 input[type="submit"].special:active,
@@ -8083,7 +8120,7 @@
 			}
 
 				#wrapper > .invert a:hover {
-					color: #E64848;
+					color: #cd0000;
 				}
 
 			#wrapper > .invert strong, #wrapper > .invert b {
@@ -8126,8 +8163,8 @@
 				#wrapper > .invert input[type="button"]:hover,
 				#wrapper > .invert button:hover,
 				#wrapper > .invert .button:hover {
-					box-shadow: inset 0 0 0 1px #E64848;
-					color: #E64848 !important;
+					box-shadow: inset 0 0 0 1px #cd0000;
+					color: #cd0000 !important;
 				}
 
 				#wrapper > .invert input[type="submit"]:active,
@@ -8135,9 +8172,9 @@
 				#wrapper > .invert input[type="button"]:active,
 				#wrapper > .invert button:active,
 				#wrapper > .invert .button:active {
-					background-color: rgba(71, 211, 229, 0.2);
-					box-shadow: inset 0 0 0 1px #E64848;
-					color: #E64848 !important;
+					background-color: rgba(230, 72, 72, 0.2);
+					box-shadow: inset 0 0 0 1px #cd0000;
+					color: #cd0000 !important;
 				}
 
 				#wrapper > .invert input[type="submit"].special,
@@ -8155,7 +8192,7 @@
 					#wrapper > .invert input[type="button"].special:hover,
 					#wrapper > .invert button.special:hover,
 					#wrapper > .invert .button.special:hover {
-						background-color: #E64848;
+						background-color: #cd0000;
 					}
 
 					#wrapper > .invert input[type="submit"].special:active,
@@ -8189,8 +8226,8 @@
 				#wrapper > .invert input[type="url"]:focus,
 				#wrapper > .invert select:focus,
 				#wrapper > .invert textarea:focus {
-					border-color: #E64848;
-					box-shadow: 0 0 0 1px #E64848;
+					border-color: #cd0000;
+					box-shadow: 0 0 0 1px #cd0000;
 				}
 
 			#wrapper > .invert .select-wrapper:before {
@@ -8216,8 +8253,8 @@
 
 			#wrapper > .invert input[type="checkbox"]:focus + label:before,
 			#wrapper > .invert input[type="radio"]:focus + label:before {
-				border-color: #E64848;
-				box-shadow: 0 0 0 1px #E64848;
+				border-color: #cd0000;
+				box-shadow: 0 0 0 1px #cd0000;
 			}
 
 			#wrapper > .invert ::-webkit-input-placeholder {
@@ -8245,14 +8282,14 @@
 			}
 
 			#wrapper > .invert a.icon.style2:hover:before {
-				box-shadow: inset 0 0 0 1px #E64848;
-				color: #E64848;
+				box-shadow: inset 0 0 0 1px #cd0000;
+				color: #cd0000;
 			}
 
 			#wrapper > .invert a.icon.style2:active:before {
-				background-color: rgba(71, 211, 229, 0.1);
-				box-shadow: inset 0 0 0 1px #E64848;
-				color: #E64848;
+				background-color: rgba(230, 72, 72, 0.1);
+				box-shadow: inset 0 0 0 1px #cd0000;
+				color: #cd0000;
 			}
 
 			#wrapper > .invert ul.alt li {
@@ -8372,11 +8409,11 @@
 			}
 
 		#wrapper > .color1 {
-			background-color: #30363d;
+			background-color: #cd0000;
 		}
 
 		#wrapper > .color2 {
-			background-color: #F84A4A;
+			background-color: #ff9696;
 		}
 
 		#wrapper > .color3 {
@@ -8400,7 +8437,7 @@
 		}
 
 		#wrapper.divided > * {
-			box-shadow: inset 0 1px 0 0 rgba(0, 0, 0, 0.075);
+			box-shadow: inset 0 2px 0 0 rgba(205, 0, 0, 1);
 		}
 
 			#wrapper.divided > *:first-child {
