@@ -1,7 +1,7 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300i,400,400i");
-@import url("https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i");
-@import url("https://fonts.googleapis.com/css?family=Montserrat:100,100i,800,800i")
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:200,800");
 
 /*
 	Story by HTML5 UP
@@ -1781,15 +1781,15 @@
 	}
 
 	blockquote {
-		font-family: "Montserrat";
-		font-weight: 100;
+		font-family: 'Montserrat', sans-serif;
+		font-weight: 200;
 		font-style: italic;
 		padding: 0.5rem 0 0.5rem 2rem;
 		background: #cd0000;
     	color: #fff;
     	width: 30%;
     	padding: 15px;
-    	font-size: 1.1em;
+    	font-size: 1.2em;
     	float: left;
     	margin: 7px 24px 7px 0;
     	border-left: 15px solid #ccc;
